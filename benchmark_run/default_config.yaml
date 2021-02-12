@@ -1,0 +1,23 @@
+network_structure : "PLRNN"         # ["PLRNN","LSTM","IRNN","np_RNN","uninitialized","oPLRNN","oRNN","L2PLRNN"]
+problem : "Addition"                # ["Addition", "Multiplication", "MNIST"]
+T : 400                             # Length of time series (only Addition and Multiplication problems)
+d_hidden : 30                       # Number of hidden units
+per_reg : 0.5                       # percentage of regulated units for PLRNN
+tau_A : 0.1                         # Regularization parameter for A
+tau_W : 0.1                         # Regularization parameter for W
+optimize_C : True                   # overwrite initialized C Matrix if not optimized
+lr : 0.001                          # Learning rate
+n_epochs : 200                      # Maximum number of epochs
+train_batch_size : 500              # Batch size for training
+optimizer : "Adam"                  # Optimizer ("Adam", "SGD", "Adagrad")
+reset_optimizer: False              # Whether or not to reset the optimizer after each epoch
+test_batch_size : 100               # Batch size for testing
+
+
+# Additonal parameters that should not be changed:
+seed : 0
+error_threshold_to_abort : 100
+W_regularization_scheme : "R"       # L -> Lower left part regularized, R -> Upper right part regularized , F-> full matrix regularized
+tau_C : 0.0                         # Regularization parameter for C - not used here, keep at 0
+initialize_regulated : "AWh"        # Must contain the letters of the matrices which should be initialized
+provide_first_input_twice: False    # Whether or not to set initial hidden to mu_0 + C * I
