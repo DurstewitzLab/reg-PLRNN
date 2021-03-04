@@ -1,4 +1,3 @@
-# Create all the config files for a run without using smt
 import sys
 import os
 import yaml
