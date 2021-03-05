@@ -5,7 +5,7 @@
 % Copyright: Dept. of Theoretical Neuroscience, CIMH, Heidelberg University
 clear all
 addpath("helper")
-load("results_S2_ABC.mat")
+load("results_S3_ABC.mat")
 %% 1) Plot the curve to get the best d_hidden with iRNN
 add_annotations = true;
 show_errorbar = true;
