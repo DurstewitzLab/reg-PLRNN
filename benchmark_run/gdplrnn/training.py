@@ -11,7 +11,6 @@ import torch
 import numpy as np
 from torch.autograd import Variable
 from gdplrnn.comparison_models import IRNN, LSTM, np_RNN, UninitializedRNN, oRNN
-from gdplrnn.uRNN import uRNN
 from collections import namedtuple
 import time
 import torch.nn.functional as F
@@ -92,8 +91,6 @@ def create_model(t_config):
         model = UninitializedRNN(d_in, t_config.d_hidden, d_out)
     elif t_config.network_structure == 'oRNN':
         model = oRNN(d_in, t_config.d_hidden, d_out)
-    elif t_config.network_structure == 'uRNN':
-        model = uRNN(d_in, t_config.d_hidden, d_out)
     else:
         raise KeyError('{} is an  unknown network_structure'.format(
             t_config.network_structure))

@@ -10,16 +10,6 @@ import torch as th
 import torch.nn as nn
 from gdplrnn.model import DiagLinear
 
-class uRNN(nn.Module):
-    def __init__(self, input_size, hidden_size, output_size):
-        super(uRNN, self).__init__()
-        self.hidden_size = hidden_size
-        self.output_weights = nn.Linear(hidden_size, output_size)
-
-        self.step1 = DiagLinear(hidden_size, bias=False)
-
-        self.init_bias()
-
 class LSTM(nn.Module):
     def __init__(self, input_size, hidden_size, output_size):
         super(LSTM, self).__init__()
