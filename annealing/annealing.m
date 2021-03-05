@@ -1,3 +1,9 @@
+% Copyright: Dept. of Theoretical Neuroscience, CIMH, Heidelberg University
+%
+% Please cite:
+%   Dominik Schmidt, Georgia Koppe, Zahra Monfared, Max Beutelspacher,
+%   Daniel Durstewitz, Identifying nonlinear dynamical systems with multiple
+%   time scales and long-range dependencies, ICLR (2021)
 function annealing(M,dat,pat_output,outputfile,tau)
 
 if nargin<5, tau=0; end

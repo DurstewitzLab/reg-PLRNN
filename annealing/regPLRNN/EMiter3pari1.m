@@ -3,7 +3,10 @@ function [mu0sv,Bsv,Gsv,Asv,Wsv,Csv,hsv,Ssv,EziSv,VestSv,EphiziSv,EphizijSv,Ezip
 % --- this is a parallel implementation based on integration of expectation
 % sums across segments!
 %
-% please cite (& consult for further details): ******
+% please cite (& consult for further details):
+%   Dominik Schmidt, Georgia Koppe, Zahra Monfared, Max Beutelspacher,
+%   Daniel Durstewitz, Identifying nonlinear dynamical systems with multiple
+%   time scales and long-range dependencies, ICLR (2021)
 % 
 % implements EM iterations for PLRNN system
 % z_t = A z_t-1 + W max(z_t-1,0) + h + Inp_t + e_t , e_t ~ N(0,S)

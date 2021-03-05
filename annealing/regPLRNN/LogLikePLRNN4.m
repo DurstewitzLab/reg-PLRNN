@@ -1,5 +1,9 @@
 function [LL, LL_pxz, LL_pz]=LogLikePLRNN4(A,W,C,S,Inp_,mu0_,B,G,h,X_,Z_,reg)
-
+%
+% please cite (& consult for further details):
+%   Dominik Schmidt, Georgia Koppe, Zahra Monfared, Max Beutelspacher,
+%   Daniel Durstewitz, Identifying nonlinear dynamical systems with multiple
+%   time scales and long-range dependencies, ICLR (2021)
 
 %edits on regularization **** 2019/08
 if nargin>11

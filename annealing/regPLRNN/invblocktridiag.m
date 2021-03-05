@@ -1,5 +1,10 @@
 %% a function that computes the block diagonal and d-block-off-diagonal
 %% elements of a symmetric block tridiagonal matrix' inverse
+%
+% please cite (& consult for further details):
+%   Dominik Schmidt, Georgia Koppe, Zahra Monfared, Max Beutelspacher,
+%   Daniel Durstewitz, Identifying nonlinear dynamical systems with multiple
+%   time scales and long-range dependencies, ICLR (2021)
 
 % INPUT:
 % A: symmetric block tridiagonal matrix with blocks of size m x m

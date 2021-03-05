@@ -1,6 +1,9 @@
 function [Ephizi,Ephizij,Eziphizj,V, Vtt, Vtt1]=ExpValPLRNN2(Ez,U)
 %
-% please cite (& consult for further details): ******
+% please cite (& consult for further details):
+%   Dominik Schmidt, Georgia Koppe, Zahra Monfared, Max Beutelspacher,
+%   Daniel Durstewitz, Identifying nonlinear dynamical systems with multiple
+%   time scales and long-range dependencies, ICLR (2021)
 % 
 % computes expectancies E[phi(z)], E[z phi(z)'], E[phi(z) phi(z)'],  
 % as given in eqn. 10-15, based on provided state expectancies and Hessian

@@ -1,3 +1,9 @@
+% Copyright: Dept. of Theoretical Neuroscience, CIMH, Heidelberg University
+%
+% Please cite:
+%   Dominik Schmidt, Georgia Koppe, Zahra Monfared, Max Beutelspacher,
+%   Daniel Durstewitz, Identifying nonlinear dynamical systems with multiple
+%   time scales and long-range dependencies, ICLR (2021)
 clear all
 
 % set paths for state space models and data

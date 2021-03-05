@@ -3,7 +3,11 @@ function [z,U,d,Err]=StateEstPLRNN3c(A,W,C,S,Inp_,mu0_,B,G,h,X_,z0,d0,tol,eps,fl
 % *** Same as StateEstPLRNN, except that additional matrix C of weights for
 % external regressors (i.e., inputs) is allowed for
 %
-% please cite (& consult for further details): ******
+% please cite (& consult for further details):
+%   Dominik Schmidt, Georgia Koppe, Zahra Monfared, Max Beutelspacher,
+%   Daniel Durstewitz, Identifying nonlinear dynamical systems with multiple
+%   time scales and long-range dependencies, ICLR (2021)
+
 % 
 % implements state estimation for PLRNN system
 % z_t = A z_t-1 + W max(z_t-1,0) + h + C Inp_t + e_t , e_t ~ N(0,S)

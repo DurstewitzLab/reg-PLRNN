@@ -1,3 +1,8 @@
+%% Plot figure S2 A,B,C from:
+%   Dominik Schmidt, Georgia Koppe, Zahra Monfared, Max Beutelspacher,`
+%   Daniel Durstewitz, Identifying nonlinear dynamical systems with multiple
+%   time scales and long-range dependencies, ICLR (2021)
+% Copyright: Dept. of Theoretical Neuroscience, CIMH, Heidelberg University
 clear all
 addpath("helper")
 load("results_S2_ABC.mat")

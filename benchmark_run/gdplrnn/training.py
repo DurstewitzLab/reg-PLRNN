@@ -1,3 +1,11 @@
+# Written by Max Beutelspacher and Dominik Schmidt
+# Copyright: Dept. of Theoretical Neuroscience, CIMH, Heidelberg University
+#
+# Please cite:
+#   Dominik Schmidt, Georgia Koppe, Zahra Monfared, Max Beutelspacher,
+#   Daniel Durstewitz, Identifying nonlinear dynamical systems with multiple
+#   time scales and long-range dependencies, ICLR (2021)
+
 from gdplrnn.model import PLRNN, Config, generate_random_params
 import torch
 import numpy as np
